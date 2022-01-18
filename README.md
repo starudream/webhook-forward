@@ -22,10 +22,10 @@ docker run -d starudream/webhook-forward
 
 ```shell
 ADDR=127.0.0.1:9988
-PROXY=http://127.0.0.1:7890
 DEBUG=true
 
-REDIS_DSN=redis://127.0.0.1:6378 #optional
+PROXY=http://127.0.0.1:7890 # optional, if use telegram, to call it api
+REDIS_DSN=redis://127.0.0.1:6378 # optional, if use weixin, to store access_token
 
 DINGTALK_ENABLE=true
 DINGTALK_TOKEN=
@@ -41,6 +41,10 @@ WEIXIN_SECRET=
 WEIXIN_AID=
 WEIXIN_TO=@all
 ```
+
+## Synology
+
+![synology-webhook-setting](./images/synology-webhook-setting.png)
 
 ## License
 
